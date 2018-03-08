@@ -1,0 +1,78 @@
+.App {
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  height: 400px;
+  width: 550px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 50px auto 50px;
+  background: orange;
+  width: 100%;
+  height: 300px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.main__image-logo {
+  grid-row: 1 / 2;
+  grid-column: 1 / -1;
+  height: 50px;
+  width: 50px;
+  margin: 5px;
+}
+
+.main__headline {
+  grid-row: 2 / 3;
+  grid-column: 1 / -1;
+  align-self: center;
+  font-size: 42px;
+  font-weight: 400;
+  letter-spacing: 0.55px;
+  line-height: 55px;
+  margin: 0;
+  padding: 0 40px;
+  color: #fff;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.credit-box {
+  grid-row: 3 / 4;
+  grid-column: 1 / -1;
+  justify-self: end;
+  background: #fff;
+  margin: 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  align-self: flex-end;
+  height: 50px;
+}
+
+.credit-box__name {
+  flex: 1;
+  color: orange;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  letter-spacing: 0.25px;
+}
+
+.credit-box__headshot {
+  height: 46px;
+  width: 46px;
+  margin: 2px;
+}
+
+
