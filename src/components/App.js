@@ -10,6 +10,9 @@ class App extends Component {
   render() {
     const headline = 'Learning React? Start Small.';
     const name = 'Michael Manges';
+    const message = "Can't pry yourself away from tutorials? The cure is to make tiny little experiment apps.";
+    const url = 'https://michaelmanges.com';
+    const linkName = 'michaelmanges.com';
 
     return (
       <div className="App">
@@ -18,6 +21,9 @@ class App extends Component {
           headline={headline}
           name={name}
           creditImageURL={headshot}
+          message={message}
+          url={url}
+          linkName={linkName}
         />
       </div>
     );

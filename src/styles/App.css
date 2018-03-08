@@ -1,3 +1,9 @@
+:root {
+  --height: 430px;
+  --width: 550px;
+  --main-height: 300px;
+}
+
 .App {
   display: flex;  
   justify-content: center;
@@ -6,10 +12,11 @@
 }
 
 .card {
-  height: 400px;
-  width: 550px;
+  height: var(--height);
+  width: var(--width);
   border: 1px solid #ddd;
   border-radius: 5px;
+  margin: 0 20px;
 }
 
 .main {
@@ -18,7 +25,7 @@
   grid-template-rows: 50px auto 50px;
   background: orange;
   width: 100%;
-  height: 300px;
+  height: var(--main-height);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
@@ -75,4 +82,41 @@
   margin: 2px;
 }
 
+.message {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-columns: 1fr auto 1fr;
+  grid-gap: 10px;
+  padding: 15px;
+}
 
+.message__headline {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 0;
+}
+
+.message__body {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.25px;
+  line-height: 20px;
+}
+
+.message__url {
+  color: #aaa;
+  text-decoration: none;
+}
+
+
+/******************************
+          MEDIA QUERIES
+******************************/
+
+@media (max-width: 450px) {
+  :root {
+    --height: 485px;
+    --main-height: 345px;
+  }
+}
