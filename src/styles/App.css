@@ -2,6 +2,8 @@
   --height: 430px;
   --width: 550px;
   --main-height: 300px;
+  --bg-color: #FF8C00;
+  --main-font-color: #fff;
 }
 
 .App {
@@ -23,7 +25,7 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 50px auto 50px;
-  background: orange;
+  background: var(--bg-color);
   width: 100%;
   height: var(--main-height);
   border-top-left-radius: 5px;
@@ -48,7 +50,7 @@
   line-height: 55px;
   margin: 0;
   padding: 0 40px;
-  color: #fff;
+  color: var(--main-font-color);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
@@ -57,7 +59,7 @@
   grid-row: 3 / 4;
   grid-column: 1 / -1;
   justify-self: end;
-  background: #fff;
+  background: var(--main-font-color);
   margin: 5px;
   display: flex;
   justify-content: flex-end;
@@ -68,7 +70,7 @@
 
 .credit-box__name {
   flex: 1;
-  color: orange;
+  color: var(--bg-color);
   font-size: 18px;
   font-weight: 700;
   margin: 0 10px;
